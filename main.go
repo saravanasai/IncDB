@@ -70,7 +70,7 @@ func handleConnection(conn net.Conn) {
 		case "INCR":
 			conn.Write([]byte("OK\n"))
 		case "GET":
-			conn.Write([]byte("0\n")) // placeholder
+			conn.Write([]byte("0\n"))
 		case "RESET":
 			conn.Write([]byte("OK\n"))
 		case "EXIT":
